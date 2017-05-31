@@ -8,21 +8,25 @@ import java.util.Map;
 
 import com.nestorrente.jardump.formatter.classname.ClassNameFormatters;
 
-@SuppressWarnings("unused")
 public class JarDumpTest {
 
+	// TODO clean this class
 	// TODO write some jUnit tests
 
+	@SuppressWarnings("unused")
 	private static final JarDump DEFAULT_CLASSNAME_JARDUMP = new JarDump();
 
+	@SuppressWarnings("unused")
 	private static final JarDump SIMPLE_CLASSNAME_JARDUMP = new JarDumpBuilder()
 		.setClassNameFormatter(ClassNameFormatters.SIMPLE)
 		.build();
 
+	@SuppressWarnings("unused")
 	private static final JarDump CANONICAL_CLASSNAME_JARDUMP = new JarDumpBuilder()
 		.setClassNameFormatter(ClassNameFormatters.CANONICAL)
 		.build();
 
+	@SuppressWarnings("unused")
 	private static final JarDump NO_PACKAGE_CLASSNAME_JARDUMP = new JarDumpBuilder()
 		.setClassNameFormatter(ClassNameFormatters.NO_PACKAGE)
 		.build();
@@ -31,6 +35,7 @@ public class JarDumpTest {
 		.setClassNameFormatter(ClassNameFormatters.NO_PACKAGE_CANONICAL)
 		.build();
 
+	@SuppressWarnings("unused")
 	private static final JarDump LOWERCASE_CLASSNAME_JARDUMP = new JarDumpBuilder()
 		.setClassNameFormatter(c -> c.getName().toLowerCase())
 		.build();
