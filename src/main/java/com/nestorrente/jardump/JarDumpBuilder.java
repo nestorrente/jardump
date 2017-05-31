@@ -47,14 +47,6 @@ public class JarDumpBuilder implements Builder<JarDump> {
 		return this;
 	}
 
-	/**
-	 * Use {@link #build()} method instead.
-	 */
-	@Deprecated
-	public JarDump create() {
-		return this.build();
-	}
-
 	@Override
 	public JarDump build() {
 		return new JarDump(this.classNameFormatter, this.indent, this.nullText, this.typeDumperFactories);

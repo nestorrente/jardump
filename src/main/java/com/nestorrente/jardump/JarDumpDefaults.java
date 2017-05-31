@@ -9,7 +9,6 @@ import java.util.Map;
 import com.nestorrente.jardump.formatter.classname.ClassNameFormatter;
 import com.nestorrente.jardump.formatter.classname.ClassNameFormatters;
 import com.nestorrente.jardump.type.factory.TypeDumperFactory;
-import com.nestorrente.jardump.type.factory.standard.ArrayTypeDumperFactory;
 import com.nestorrente.jardump.type.factory.standard.HierarchyTypeDumperFactory;
 import com.nestorrente.jardump.type.standard.ArrayTypeDumper;
 import com.nestorrente.jardump.type.standard.CollectionTypeDumper;
@@ -52,7 +51,7 @@ final class JarDumpDefaults {
 
 		/* Primitive arrays */
 
-		TYPE_DUMPER_FACTORIES.add(new ArrayTypeDumperFactory(new ArrayTypeDumper()));
+		TYPE_DUMPER_FACTORIES.add(ArrayTypeDumper.FACTORY);
 
 	}
 

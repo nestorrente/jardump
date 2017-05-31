@@ -2,11 +2,24 @@ package com.nestorrente.jardump.type.standard;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.lang.reflect.Type;
 
 import com.nestorrente.jardump.DumpWriter;
 import com.nestorrente.jardump.type.TypeDumper;
+import com.nestorrente.jardump.type.factory.TypeDumperFactory;
 
 public class ArrayTypeDumper extends TypeDumper<Object> {
+
+	public static TypeDumperFactory FACTORY = new TypeDumperFactory() {
+
+		@Override
+		public TypeDumper<?> create(Type type) {
+			return type instanceof Class && ((Class<?>) type).isArray() ? new ArrayTypeDumper() : null;
+		}
+
+	};
+
+	private ArrayTypeDumper() {}
 
 	@Override
 	public void dump(DumpWriter writer, Object object) throws IOException {

@@ -8,6 +8,7 @@ import java.util.Map;
 
 import com.nestorrente.jardump.formatter.classname.ClassNameFormatters;
 
+@SuppressWarnings("unused")
 public class JarDumpTest {
 
 	// TODO write some jUnit tests
