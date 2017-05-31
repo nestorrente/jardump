@@ -1,3 +1,3 @@
 # JarDump
 
-A PHP's vardump() port for Java.
+A PHP's ```vardump()``` function port to Java.

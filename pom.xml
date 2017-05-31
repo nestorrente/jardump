@@ -6,7 +6,7 @@
 	<artifactId>jardump</artifactId>
 	<version>1.0.0</version>
 	<name>JarDump</name>
-	<description>A PHP's vardump() port for Java</description>
+	<description>A PHP's vardump() function port to Java</description>
 
 	<properties>
 		<commons.lang.version>3.5</commons.lang.version>
