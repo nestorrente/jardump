@@ -10,8 +10,8 @@ public final class ClassNameFormatters {
 
 	public static final ClassNameFormatter SIMPLE = Class::getSimpleName;
 
-	public static final ClassNameFormatter NO_PACKAGE = new NoPackageClassNameFormatter(Class::getName);
+	public static final ClassNameFormatter NO_PACKAGE = new NoPackageClassNameFormatter();
 
-	public static final ClassNameFormatter NO_PACKAGE_CANONICAL = new NoPackageClassNameFormatter(Class::getCanonicalName);
+	public static final ClassNameFormatter NO_PACKAGE_CANONICAL = new NoPackageCanonicalClassNameFormatter();
 
 }
