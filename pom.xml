@@ -9,7 +9,7 @@
 	<description>A PHP's vardump() function port to Java</description>
 
 	<properties>
-		<commons.lang.version>3.9</commons.lang.version>
+		<commons.lang.version>3.11</commons.lang.version>
 		<junit.version>4.12</junit.version>
 	</properties>
 
